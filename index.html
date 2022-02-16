@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <title>Unit Converter</title>
+
+        <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main>
+            <section class="inputSection">
+                <div class="container">
+                    <h2>Metric-Imperial unit converter</h2>
+                    <h1 id="numberGiven">0</h1>
+                    <div class="inputField">
+                        <label>Write a number:<br><input type="text" id="inputEl" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></label>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="resultSection">
+                <div class="container colContainer">
+                    <div class="col">
+                        <p class="subtitle">Length (Meters-Feet & Centimeters-Inches)</p>
+                        <p class="grey" id="m-ft">0 meters = 0 feet | 0 feet = 0 meters</p>
+                        <p class="result" id="cm-in">0 centimeters = 0 inches | 0 inches = 0 centimeters</p>
+                        <p class="subtitle">Volume (Liters-Gallons)</p>
+                        <p class="result" id="l-gal">0 liters = 0 gallons | 0 gallons = 0 liters</p>
+                    </div>
+                    
+                    <div class="col">                    
+                        <p class="subtitle">Mass (Kilograms-Pounds & Grams - Ounces)</p>
+                        <p class="grey" id="kg-lb">0 kilograms = 0 pounds | 0 pounds = 0 kilograms</p>
+                        <p class="result" id="g-oz">0 grams = 0 ounces | 0 ounces = 0 grams</p>
+                        <p class="subtitle">Temperature (Celsius-Fahrenheit)</p>
+                        <p class="result" id="c-f"> 0 celsius = 0 fahrenheit | 0 fahrenheit = 0 celsius</p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p class="grey">Developed by <span>MarianaGM</span></p>
+                </div>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
